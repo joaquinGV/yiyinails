@@ -1,0 +1,633 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #D9B4BE;
+}
+
+/* Header de todos */
+header{
+    background-color: #D9B4BE;
+    border :3px solid black;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-between;
+    height: 8%;
+}
+
+header img {
+    display: inline;
+    float:left;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+header p{
+    font-size: 40px;
+    font-style: normal;
+    color:black;
+    font-weight: bold;
+    background-color: transparent;
+    max-height: 100%;
+    max-width: 100%;
+
+}
+
+header ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+header li a {
+    display: inline-flex;
+    justify-content: block-end;
+    color: #666;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    height: 100%;
+    max-width: 100%;
+}
+  
+header li a:hover:not(.active) {
+    background-color: #F2CED8;
+}
+  
+header li a.active {
+    color: antiquewhite;
+    background-color: #8C2641;
+    
+}
+
+  /* Seccion Portada */
+.portada{
+    width: 93%;
+    height: 65%;
+    padding: 1%;
+    padding-top: 2%;
+    margin: 2%;
+    border: 5px antiquewhite solid;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portada button{
+    margin-left: 10px;
+    display: inline-block;
+    height: 20%;
+    width: 20%;
+    border-radius: 25px ;
+    border: 2px #732634 solid;
+    background-color: #FAACC4 ;
+    font-size: 25px;
+    font-style: normal;
+    color:black;
+    font-weight: bold;
+}
+
+.portada button:hover,
+.f2-parte1 button:hover,
+.f2-parte3 button:hover,
+.resumen button:hover,
+.commentarios__botones button:hover
+{
+    background-color: #732634;
+    color: antiquewhite;
+    border: 2px #732634 solid;
+}
+
+.portada__estilos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.portada__estilos img{
+    height:95%;
+    width: 95%;
+}   
+
+/* Seccion Descripcion  */
+.descripcion{
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
+    gap: 20px;
+    justify-content:space-evenly;
+}
+
+.descripcion h2{
+    width: 100%;
+    text-align: center;
+}
+
+.descripcion img{
+    width: 25%;
+}
+
+.descripcion__texto{
+    text-align: center;
+    max-width: 75%;
+    width: 60%;
+    font-size: 20px;
+}
+
+
+/* Seccion Ubicacion */
+.ubicacion{
+    width: 93%;
+    height: 50%;
+    padding: 1%;
+    margin: 2%;
+    /* margin-bottom: 5%; */
+    border: 5px antiquewhite solid;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    overflow:hidden;
+
+}
+
+.ubicacion h2{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.ubicacion__mapa{
+    width: 40%;
+    height: 90%;
+    margin-inline: 5px;
+}
+
+.ubicacion__datos{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin-inline: 30px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.ubicacion__horarios {
+    margin-right: 60px;
+    max-height: 90%
+}
+.ubicacion__horarios h4
+
+.ubicacion__horarios table,
+.ubicacion__horarios th,
+.ubicacion__horarios td {
+    border: gray 2px solid;
+    font-size: 20px;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+/* Footer */
+footer{
+    background:#732634;
+    padding: 60px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 8%;
+    justify-content: space-between;
+    background: transparent;
+}
+
+footer div span{
+    background-color: transparent;
+    font-size: 1.6em;
+    color:antiquewhite;
+}
+
+/* Pagina Servicios */
+.uñas{
+    display: block;
+    padding:20px;
+    border: 5px solid antiquewhite;
+    margin: 3%;
+    overflow: hidden;
+}
+
+.uñas__header{
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+    font-size: 2em;
+    width: auto; 
+    margin: 15px;   
+    justify-content: left;
+}
+
+.uñas__header h2{
+    margin-right: 20px;
+}
+
+.uñas__contenido{
+    display: flex;
+    flex-direction: row;
+    padding-inline: 50px;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.uñas__contenido__servicios{
+    display: block;
+    width: 40%;
+    font-size: 1.2em;
+    
+}
+
+.uñas__contenido__servicios .datos{
+    list-style-image: url(./play-solid.svg);
+    padding: 15px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    border: #666 3px solid;
+}
+
+.uñas__contenido__servicios .proceso{
+    padding: 15px;
+    border: #666 3px solid;
+}
+
+.proceso p{
+    margin: 20px 0px;
+}
+
+.uñas__contenido__imagen{
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    width: 550px;
+    height: 550px;
+    /* border: #666 5px solid; */
+}
+
+/* Agendar Cita Pagina */
+
+.cita-main h2{
+    font-size: 2.5em;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+/* Seccion contenido main */
+.cita-main section{
+    padding:20px;
+    border: 5px solid antiquewhite;
+    margin: 3%;
+    margin-top: 1%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cita-main .forms{
+    max-width: 47%;
+    max-height: 100%;
+    width: 50%;
+    font-size: 1.2em;
+    margin: 2%;
+}
+
+/*Cita Formulario 1 */
+.cita-main .formulario-1, .formulario-2{
+    display: block;
+    padding: 15px;
+    border: #666 solid 5px;
+}
+
+.cita-main .cat1{
+    display: flex;
+    max-width: 100%;
+    min-width: 40%;
+    gap: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.cat1__categoria h3{
+    display: block;
+}
+
+.cat1__categoria{
+    width: 40%;
+}
+
+select:not(:valid){
+    color:gray;
+}
+option{
+    color:black
+}
+
+
+.cat3-horarios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cat3-horarios h3{
+    width: 100%;
+}
+/* Botones horario */
+.r-button{
+    flex-wrap: wrap;
+    margin: 4px;
+    width: 100px;
+    height: 40px;
+    position: relative; 
+
+}
+
+.r-button label,
+.r-button input {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: black 3px solid;
+
+}
+
+.r-button input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+  }
+
+ .r-button input[type="radio"]:checked + label{
+    background: #20b8be;
+    border-radius: 4px;
+  }
+  
+  .r-button label {
+    cursor: pointer;
+    z-index: 90;
+    line-height: 1.5em;
+  }
+  
+  /*Cita Formulario 2 */
+
+.f2-parte1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-inline: 25px;
+    margin-bottom: 15px;
+}
+
+.f2-parte1 button{
+    padding: 4px;
+    font-weight: bold;
+}
+
+.f2-parte2{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 5px 15px;
+    justify-content:space-between;
+    margin-right: 10%;
+}
+
+.formulario-2 label{
+    float: inline-start;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.formulario-2 .f2-parte2 input{
+    float: inline-end;  
+    width: 45%;
+    text-align: center;
+    font-size: 16px;
+} 
+
+.f2-parte3{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.f2-parte3 button{
+    margin-inline: 100%;
+    margin-top: 15px;
+    padding:5px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Resumen cita */
+.cita-main .resumen{
+    justify-content: center;
+    text-align: center;
+}
+
+.resumen .r-block{
+    margin: 25px 25% 0 25%;
+    padding: 10px;
+    border: #666 solid 5px;
+}
+
+.resumen .r-titulo{
+    font-size: 1.2em;
+    border-bottom: 2px dashed #8C2641;
+    }  
+.resumen .r-content{
+    border-bottom: 2px dashed #8C2641;
+}
+
+.resumen button{
+    margin-top: 10px;
+    padding:5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* seccion Galeria */
+
+.galeria h2,
+.index h2{
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 15px;
+}
+
+.sec-galeria,
+.sec-comentarios {
+    padding:20px;
+    border: 5px solid antiquewhite;
+    margin: 1% 3% 1% 3%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec-galeria .foto {
+    width: 22%;
+    max-height: 320px;
+    border: #666 3px solid;
+    padding: 10px;
+    margin: 5px;
+}
+
+.foto img{
+    width: 100%;
+    height: 85%;
+}
+
+.foto p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.foto .foto__servicio{  
+    font-weight: bold;
+}
+
+/* Galeria comentarios */
+
+.sec-comentarios, 
+.sec-comentarios *{
+    background-color: plum;
+
+}
+
+.sec-comentarios{
+    margin-bottom: 35px;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+.comentarios__area{
+    display: inline-block;
+    border:#666 3px solid;
+    max-width: 55%;
+    width: 600px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #F2CED8;
+}
+
+.comentarios__area *{
+    background-color: #F2CED8;
+}
+
+.comentarios__persona {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Galeria Botones */
+
+.commentarios__botones{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    padding-top: 35px;
+    
+}
+
+.commentarios__botones button{
+    padding: 5px;
+    font-size: 1.8em;
+    border: 3px solid ;
+    background-color: #D9B4BE;
+}
+
+/* Ofertas pagina */
+#grid__main{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "amigas . oferta__img"
+    "amigas mes oferta__img"
+    "contacto mes temporada"
+    "contacto . temporada";
+    border: 5px solid antiquewhite;
+    margin: 3% 3% 3% 3%;
+    padding: 15px;
+    gap:25px;
+    align-content: center;
+    justify-content: center;
+}
+
+.p-amigas{
+    grid-area: amigas;
+}
+
+.p-mes{
+    grid-area: mes;
+}
+
+.p-temporada{
+    grid-area: temporada;
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+.oferta__img{
+    grid-area: oferta__img;
+    width: 92%;
+    height: 100%;
+
+}
+
+#grid__main .promo,
+#grid__main .contacto{
+    border: 5px solid #666;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    align-content: center !important;
+    justify-content: center !important;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
