@@ -6,62 +6,43 @@
 
 /* Header de todos */
 header{
-    background-color: #D9B4BE;
+    background-color: #D9B4BE !important; 
     border :3px solid black;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
     justify-content: space-between;
-    height: 8%;
 }
 
-header img {
-    display: inline;
-    float:left;
-    height: 100%;
-    width: 100%;
-    border: none;
+.navbar{
+    padding:0 !important;
+    margin-bottom: 0;
 }
 
-header p{
-    font-size: 40px;
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    background-color: #D9B4BE!important;
+}
+
+.navbar-brand{
     font-style: normal;
     color:black;
     font-weight: bold;
     background-color: transparent;
     max-height: 100%;
-    max-width: 100%;
 
 }
 
-header ul {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;
-    overflow: hidden;
-    max-height: 100%;
-    max-width: 100%;
-}
 
-header li a {
-    display: inline-flex;
-    justify-content: block-end;
+/* #navbarNav li a {
     color: #666;
-    text-align:center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.5em;
-    height: 100%;
-    max-width: 100%;
-}
+    font-size: 1.3em;
+} */
   
-header li a:hover:not(.active) {
+#navbarNav li a:hover:not(.active) {
     background-color: #F2CED8;
 }
   
-header li a.active {
+#navbarNav li a.active {
     color: antiquewhite;
     background-color: #8C2641;
     
@@ -72,7 +53,6 @@ header li a.active {
     width: 93%;
     height: 65%;
     padding: 1%;
-    padding-top: 2%;
     margin: 2%;
     border: 5px antiquewhite solid;
     display: flex;
@@ -80,6 +60,7 @@ header li a.active {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: #D9B4BE;
 }
 
 .portada button{
