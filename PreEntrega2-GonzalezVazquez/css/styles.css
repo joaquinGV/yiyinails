@@ -31,12 +31,12 @@ header{
 }
 
 
-/* #navbarNav li a {
+#navbarNav li a {
     color: #666;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.3em;
-} */
+}
   
 #navbarNav li a:hover:not(.active) {
     background-color: #F2CED8;
