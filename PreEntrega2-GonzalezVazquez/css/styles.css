@@ -1,14 +1,13 @@
 *{
     margin:0;
     padding:0;
-    background-color: #D9B4BE;
+    background-color: #D9B4BE !important;
 }
 
 /* Header de todos */
 header{
     background-color: #D9B4BE !important; 
     border :3px solid black;
-    justify-content: space-between;
 }
 
 .navbar{
@@ -39,33 +38,33 @@ header{
 }
   
 #navbarNav li a:hover:not(.active) {
-    background-color: #F2CED8;
+    background-color: #F2CED8 !important;
 }
   
 #navbarNav li a.active {
     color: antiquewhite;
-    background-color: #8C2641;
+    background-color: #8C2641 !important;
     
 }
 
   /* Seccion Portada */
 .portada{
-    width: 93%;
-    height: 65%;
+    width: 95%;
+    height: 70%;
     padding: 1%;
     margin: 2%;
+    margin-bottom: 0;
     border: 5px antiquewhite solid;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     background-color: #D9B4BE;
+    
 }
 
-.portada button{
-    margin-left: 10px;
-    display: inline-block;
+.portada-button{
     height: 20%;
     width: 20%;
     border-radius: 25px ;
@@ -79,13 +78,13 @@ header{
     transition: transform 0.4s, background 0.5s, box-shadow 2s, color 0.4s;
 }
 
-.portada button:hover,
+.portada-button:hover,
 .f2-parte1 button:hover,
 .f2-parte3 button:hover,
 .resumen button:hover,
 .commentarios__botones button:hover
 {
-    background-color: #732634;
+    background-color: #732634 !important;
     color: antiquewhite;
     border: 2px #732634 solid;
     box-shadow: 0 0 20px 0 #732634;
@@ -93,20 +92,22 @@ header{
     transition: all 0.4s;
 }
 
-.portada__estilos{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    
+#carouselExampleAutoplaying{
+    width: 60% !important; 
+    height: 100% !important;
+    display: inline-flex !important;
 }
 
-.portada__estilos img{
-    height:95%;
-    width: 95%;
-}   
+#carouselExampleAutoplaying img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control-prev ,
+.carousel-control-next {
+    background-color: transparent !important;
+}
+
 
 /* Seccion Descripcion  */
 .descripcion{
@@ -192,7 +193,7 @@ header{
 
 /* Footer */
 footer{
-    background:#732634;
+    background:#732634 !important;
     padding: 60px;
 }
 
@@ -624,3 +625,26 @@ option{
     display: flex;
     flex-direction: column;
 }
+
+
+
+@media (max-width: 575.98px) {
+    .portada{
+        flex-wrap: wrap;
+        height: 50%;
+        gap: 10px;
+    }
+
+    .portada-button{
+        height: auto + 15px;
+        width: 70%;
+    }
+
+    #carouselExampleAutoplaying{
+        width: 95% !important; 
+        height: 70% !important;
+        display: inline-flex !important;
+    }
+    
+ }
+
