@@ -130,8 +130,12 @@
       </section>
       <!-- Descripcion -->
       <section class="descripcion">
-        <h2>Descripcion</h2>
-        <img src="./imagenes/inicio-4.jpg" alt="Uñas Descripcion" />
+        <h2 class="h2">Descripcion</h2>
+        <img
+          class="desc_uñas_up"
+          src="./imagenes/inicio-4.jpg"
+          alt="Uñas Descripcion"
+        />
         <div class="descripcion__texto">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
@@ -139,76 +143,87 @@
             magni reprehenderit praesentium fugit porro recusandae sequi numquam
             ea! Esse, quidem repellat.
           </p>
-          <br />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
             voluptate iste doloribus dicta commodi magni accusantium ipsa, odit,
             qui porro nulla eveniet, est possimus culpa repellat repudiandae
             rerum. Tenetur, neque.
           </p>
+          <img
+            class="desc_uñas_down"
+            src="./imagenes/inicio-4.jpg"
+            alt="Uñas Descripcion"
+          />
         </div>
       </section>
+      <!-- Ubicacion -->
       <section class="ubicacion">
         <h2>Ubicacion</h2>
-        <div class="ubicacion__mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780.2812704095955!2d-93.12349196622222!3d16.755566345532078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd85611d06e8f%3A0xdd78bd7b4662216a!2sTuxtla%20Guti%C3%A9rrez%2C%20Chis.!5e0!3m2!1sen!2smx!4v1674714296244!5m2!1sen!2smx"
-            width="100%"
-            height="90%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            >ubicacion</iframe
-          >
-        </div>
-        <div class="ubicacion__datos">
-          <ul>
-            <li>Tuxtla Gutierrez, Chiapas</li>
-            <li>+52 961 123 4567</li>
-            <li>yiyinails@gmail.com</li>
-          </ul>
-        </div>
-        <div class="ubicacion__horarios">
-          <h3>Horarios:</h3>
-          <table class="horario">
-            <tr>
-              <td>Lunes</td>
-              <td>10:00am - 8:00pm</td>
-            </tr>
-            <tr>
-              <td>Martes</td>
-              <td>10:00am - 8:00pm</td>
-            </tr>
-            <tr>
-              <td>Miercoles</td>
-              <td>10:00am - 8:00pm</td>
-            </tr>
-            <tr>
-              <td>Jueves</td>
-              <td>10:00am - 8:00pm</td>
-            </tr>
-            <tr>
-              <td>Viernes</td>
-              <td>10:00am - 8:00pm</td>
-            </tr>
-            <tr>
-              <td>Sabado</td>
-              <td>10:00am - 6:00pm</td>
-            </tr>
-            <tr>
-              <td>Domingo</td>
-              <td>Cerrado</td>
-            </tr>
-          </table>
+        <div class="container-fluid">
+          <div class="row row-cols-xs-1 justify-content-md-center">
+            <div class="ubicacion_mapa col-md-8 col">
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780.2812704095955!2d-93.12349196622222!3d16.755566345532078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd85611d06e8f%3A0xdd78bd7b4662216a!2sTuxtla%20Guti%C3%A9rrez%2C%20Chis.!5e0!3m2!1sen!2smx!4v1674714296244!5m2!1sen!2smx"
+                  width="90%"
+                  height="75%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  >ubicacion</iframe
+                >
+              </div>
+              <div class="ubicacion__datos">
+                <ul>
+                  <li>Tuxtla Gutierrez, Chiapas</li>
+                  <li>+52 961 123 4567</li>
+                  <li>yiyinails@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ubicacion__horarios col">
+              <h3>Horarios:</h3>
+              <table class="table table-bordered">
+                <tr>
+                  <td>Lunes</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Martes</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Miercoles</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Jueves</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Viernes</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Sabado</td>
+                  <td>10:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Domingo</td>
+                  <td>Cerrado</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <div>
-        <span>Politica de privacidad</span>
-        <span>Joaquin Gonzalez</span>
-        <span>© Copyright 2023</span>
+      <div class="footer">
+        <div>Politica de privacidad</div>
+        <div>Joaquin Gonzalez</div>
+        <div>© Copyright 2023</div>
       </div>
     </footer>
     <script
