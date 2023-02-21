@@ -10,6 +10,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>YN Galería</title>
   </head>
@@ -72,8 +76,11 @@
       <h2>Galería</h2>
       <div class="sec-galeria">
         <div class="container">
-          <div class="row row-cols-4 row-cols-xs-1 justify-content-md-center">
-            <div class="card col-3 col-xs-12" style="width: 17rem">
+          <div class="row row-cols-1 row-cols-md-4 justify-content-center">
+            <div
+              class="card col col-md-3 animate__animated animate__zoomIn"
+              style="width: 17rem"
+            >
               <img
                 src="../imagenes/inicio-2.jpg"
                 class="card-img-top"
@@ -83,7 +90,10 @@
                 <p class="card-text"><b>Servicio:</b><br />Gel Color</p>
               </div>
             </div>
-            <div class="card col-3 col-xs-12" style="width: 17rem">
+            <div
+              class="card col col-md-3 animate__animated animate__zoomIn"
+              style="width: 17rem"
+            >
               <img
                 src="../imagenes/inicio-3.jpg"
                 class="card-img-top"
@@ -93,7 +103,10 @@
                 <p class="card-text"><b>Servicio:</b><br />Uñas Acrilico</p>
               </div>
             </div>
-            <div class="card col-3 col-xs-12" style="width: 17rem">
+            <div
+              class="card col col-md-3 span3 animate__animated animate__zoomIn"
+              style="width: 17rem; visibility: visible"
+            >
               <img
                 src="../imagenes/inicio-5.jpg"
                 class="card-img-top"
@@ -106,7 +119,10 @@
                 </p>
               </div>
             </div>
-            <div class="card col-3 col-xs-12" style="width: 17rem">
+            <div
+              class="card col col-md-3 animate__animated animate__zoomIn"
+              style="width: 17rem"
+            >
               <img
                 src="../imagenes/inicio-6.jpg"
                 class="card-img-top"
@@ -116,7 +132,10 @@
                 <p class="card-text"><b>Servicio:</b><br />Retoque de Uñas</p>
               </div>
             </div>
-            <div class="card col-3 col-xs-12 card_none" style="width: 17rem">
+            <div
+              class="card col col-md-3 animate__animated animate__zoomIn card_none"
+              style="width: 17rem"
+            >
               <img
                 src="../imagenes/inicio-7.jpg"
                 class="card-img-top"
@@ -126,7 +145,10 @@
                 <p class="card-text"><b>Servicio:</b><br />Efectos</p>
               </div>
             </div>
-            <div class="card col-3 col-xs-12 card_none" style="width: 17rem">
+            <div
+              class="card col col-md-3 animate__animated animate__zoomIn card_none"
+              style="width: 17rem"
+            >
               <img
                 src="../imagenes/inicio-8.jpg"
                 class="card-img-top"
@@ -136,7 +158,10 @@
                 <p class="card-text"><b>Servicio:</b><br />Decorados</p>
               </div>
             </div>
-            <div class="card col-3 col-xs-12 card_none" style="width: 17rem">
+            <div
+              class="card col col-md-3 animate__animated animate__zoomIn card_none"
+              style="width: 17rem"
+            >
               <img
                 src="../imagenes/inicio-9.jpg"
                 class="card-img-top"
@@ -146,7 +171,10 @@
                 <p class="card-text"><b>Servicio:</b><br />Gel color</p>
               </div>
             </div>
-            <div class="card col-3 col-xs-12 card_none" style="width: 17rem">
+            <div
+              class="card col col-md-3 animate__animated animate__zoomIn card_none"
+              style="width: 17rem"
+            >
               <img
                 src="../imagenes/inicio-1.jpg"
                 class="card-img-top"
@@ -161,48 +189,56 @@
       </div>
       <!-- Comentarios -->
       <h2>Comentarios</h2>
-      <section class="sec-comentarios">
-        <div class="comentarios">
-          <div class="comentarios__area">
-            <p class="comentarios__persona">Cynthia R.</p>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              voluptatem provident voluptatum debitis unde quam natus voluptas
-              quae quos officia, reprehenderit consequuntur similique modi quas
-              veritatis animi, itaque minima nesciunt?
-            </p>
+      <section class="sec-comentarios container-fluid">
+        <div id="comentarios" class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="comentarios__area">
+              <p class="comentarios__persona">Cynthia R.</p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                voluptatem provident voluptatum debitis unde quam natus voluptas
+                quae quos officia, reprehenderit consequuntur similique modi
+                quas veritatis animi, itaque minima nesciunt?
+              </p>
+            </div>
           </div>
-          <div class="comentarios__area">
-            <p class="comentarios__persona">Josefina G.</p>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              voluptatem provident voluptatum debitis unde quam natus voluptas
-              quae quos officia, reprehenderit consequuntur similique modi quas
-              veritatis animi, itaque minima nesciunt?
-            </p>
+          <div class="col">
+            <div class="comentarios__area">
+              <p class="comentarios__persona">Josefina G.</p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                voluptatem provident voluptatum debitis unde quam natus voluptas
+                quae quos officia, reprehenderit consequuntur similique modi
+                quas veritatis animi, itaque minima nesciunt?
+              </p>
+            </div>
           </div>
-          <div class="comentarios__area">
-            <p class="comentarios__persona">Laura H.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              voluptatem provident voluptatum debitis unde quam natus voluptas
-              quae quos officia, reprehenderit consequuntur similique modi quas
-              veritatis animi, itaque minima nesciunt?
-            </p>
+          <div class="col">
+            <div class="comentarios__area">
+              <p class="comentarios__persona">Laura H.</p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                voluptatem provident voluptatum debitis unde quam natus voluptas
+                quae quos officia, reprehenderit consequuntur similique modi
+                quas veritatis animi, itaque minima nesciunt?
+              </p>
+            </div>
           </div>
-          <div class="comentarios__area">
-            <p class="comentarios__persona">Alejandra L.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-              voluptatem provident voluptatum debitis unde quam natus voluptas
-              quae quos officia, reprehenderit consequuntur similique modi quas
-              veritatis animi, itaque minima nesciunt?
-            </p>
+          <div class="col">
+            <div class="comentarios__area card_none">
+              <p class="comentarios__persona">Alejandra R.</p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                voluptatem provident voluptatum debitis unde quam natus voluptas
+                quae quos officia, reprehenderit consequuntur similique modi
+                quas veritatis animi, itaque minima nesciunt?
+              </p>
+            </div>
           </div>
         </div>
-        <div class="commentarios__botones">
-          <button>Añadir comentario</button>
-          <button>Sugerencia</button>
+        <div class="row row-cols-1 row-cols-md-2 commentarios__botones gy-3">
+          <div class="col"><button>Añadir comentario</button></div>
+          <div class="col"><button>Sugerencia</button></div>
         </div>
       </section>
     </main>

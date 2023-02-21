@@ -471,6 +471,8 @@ option{
 
 /* seccion Galeria */
 
+
+
 .galeria h2,
 .index h2{
     text-align: center;
@@ -521,35 +523,29 @@ option{
 
 .sec-comentarios, 
 .sec-comentarios *{
-    background-color: plum;
-
+    background-color: plum !important;
 }
 
 .sec-comentarios{
     margin-bottom: 35px;
 }
 
-.comentarios{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-evenly;
-
+#comentarios{
+    padding-bottom: 25px;
 }
 
 .comentarios__area{
-    display: inline-block;
     border:#666 3px solid;
-    max-width: 55%;
-    width: 600px;
     padding: 10px;
+    margin:0%;
+    width: fit-content;
+    justify-content: center;
     font-size: 1.2em;
-    background-color: #F2CED8;
+    background-color: #F2CED8 !important;
 }
 
 .comentarios__area *{
-    background-color: #F2CED8;
+    background-color: #F2CED8 !important;
 }
 
 .comentarios__persona {
@@ -561,18 +557,17 @@ option{
 /* Galeria Botones */
 
 .commentarios__botones{
+
     width: 100%;
-    display: inline-flex;
-    justify-content: space-around;
-    padding-top: 35px;
-    
+    padding-top: 25px;
+    text-align: center !important;
 }
 
 .commentarios__botones button{
     padding: 5px;
     font-size: 1.8em;
     border: 3px solid ;
-    background-color: #D9B4BE;
+    background-color: #D9B4BE !important;
 }
 
 /* Ofertas pagina */
@@ -696,6 +691,23 @@ option{
 
     .card_none{
         display: none;
+    }
+
+    .commentarios__botones div{
+        justify-content: center;
+    }
+
+    .comentarios_area{
+        justify-content:center;
+        margin: 0 !important;
+    
+    } 
+
+    .commentarios__botones{
+        width: 100%;
+        padding: 0;
+        display: block !important;
+        align-items: center !important;
     }
     
 
