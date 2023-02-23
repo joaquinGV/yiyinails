@@ -1,0 +1,242 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Yiyi Nails</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand fs-2" href="#">
+            <img
+              src="./imagenes/inicio-3.jpg"
+              alt="Logo"
+              width="80"
+              height="60"
+              class="d-inline-block align-text"
+            />
+            Yiyi Nails
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/cita.html">Agendar Cita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/ofertas.html">Ofertas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main class="index">
+      <section class="container-fluid">
+        <!-- Agendar Cita boton -->
+        <div class="row portada">
+          <button
+            class="portada-button col-md-4 col-sm-6 col-xs-6"
+            onclick="location.href='./paginas/cita.html'"
+          >
+            Agendar Cita
+          </button>
+          <!-- Carrousel de imagenes -->
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide col-md-6"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/inicio-7.jpg" class="" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/inicio-5.jpg" class="" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/inicio-6.jpg" class="" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Descripcion -->
+      <section class="descripcion">
+        <h2 class="h2">Descripcion</h2>
+        <img
+          class="desc_uñas_up"
+          src="./imagenes/inicio-4.jpg"
+          alt="Uñas Descripcion"
+        />
+        <div class="descripcion__texto">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            ad sapiente nihil cumque voluptates laboriosam maiores! Fuga commodi
+            magni reprehenderit praesentium fugit porro recusandae sequi numquam
+            ea! Esse, quidem repellat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+            voluptate iste doloribus dicta commodi magni accusantium ipsa, odit,
+            qui porro nulla eveniet, est possimus culpa repellat repudiandae
+            rerum. Tenetur, neque.
+          </p>
+          <img
+            class="desc_uñas_down"
+            src="./imagenes/inicio-4.jpg"
+            alt="Uñas Descripcion"
+          />
+        </div>
+      </section>
+      <!-- Ubicacion -->
+      <section class="ubicacion">
+        <h2>Ubicacion</h2>
+        <div class="container-fluid">
+          <div class="row row-cols-xs-1 justify-content-md-center">
+            <div class="ubicacion_mapa col-md-8 col">
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780.2812704095955!2d-93.12349196622222!3d16.755566345532078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd85611d06e8f%3A0xdd78bd7b4662216a!2sTuxtla%20Guti%C3%A9rrez%2C%20Chis.!5e0!3m2!1sen!2smx!4v1674714296244!5m2!1sen!2smx"
+                  width="90%"
+                  height="75%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  >ubicacion</iframe
+                >
+              </div>
+              <div class="ubicacion__datos">
+                <ul>
+                  <li>Tuxtla Gutierrez, Chiapas</li>
+                  <li>+52 961 123 4567</li>
+                  <li>yiyinails@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ubicacion__horarios col">
+              <h3>Horarios:</h3>
+              <table class="table table-bordered">
+                <tr>
+                  <td>Lunes</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Martes</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Miercoles</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Jueves</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Viernes</td>
+                  <td>10:00am - 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>Sabado</td>
+                  <td>10:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Domingo</td>
+                  <td>Cerrado</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div>Politica de privacidad</div>
+        <div>Joaquin Gonzalez</div>
+        <div>© Copyright 2023</div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    </script>
+  </body>
+</html>
