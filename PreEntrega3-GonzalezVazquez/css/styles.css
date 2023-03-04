@@ -109,7 +109,7 @@ header{
 }
 
 
-/* Seccion Descripcion  */
+/* Seccion Descripcion uñas  */
 .descripcion{
     display: flex;  
     flex-direction: row;
@@ -235,19 +235,13 @@ footer{
     margin-right: 20px;
 }
 
-.uñas__contenido{
-    display: flex;
-    flex-direction: row;
-    padding-inline: 50px;
+/* .uñas__contenido{
     gap: 100px;
     overflow: hidden;
-}
+} */
 
 .uñas__contenido__servicios{
-    display: block;
-    width: 40%;
-    font-size: 1.2em;
-    
+    font-size: 1.2em ; 
 }
 
 .uñas__contenido__servicios .datos{
@@ -264,17 +258,21 @@ footer{
 }
 
 .proceso p{
-    margin: 20px 0px;
+    margin: 20px 0px 20px 0px;
 }
 
 .uñas__contenido__imagen{
-    display: inline-flex;
-    justify-content: center;
+    padding-top: 15px;
     margin: auto;
     width: 550px;
     height: 550px;
-    /* border: #666 5px solid; */
 }
+
+.uñas__contenido__imagen img{
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Agendar Cita Pagina */
 
@@ -708,6 +706,26 @@ option{
         padding: 0;
         display: block !important;
         align-items: center !important;
+    }
+
+    .uñas__header{
+        padding: 0;
+        font-size: 2em;
+        margin: 5px;   
+    }
+
+    .uñas__header h2{
+        font-size: 1.5em;
+    }
+    
+    .uñas__contenido__imagen{
+        width: 100%;
+        height: auto;
+    }
+
+    .uñas__contenido__imagen img{
+        width: 100%;
+        height: auto;
     }
     
 
