@@ -189,13 +189,14 @@ header{
 
 /* Footer */
 .footer{
-    width: 90%;
+    width: 100%;
     justify-content: space-between !important;
     text-align: center; 
     background:#732634 !important;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 footer{
@@ -205,7 +206,7 @@ footer{
 }
 
 .footer div{
-    width: 30%;
+    width: 33%;
     padding: 8px;
     font-size: 1.6em;
     color:antiquewhite;
@@ -289,33 +290,22 @@ footer{
     margin: 3%;
     margin-top: 1%;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .cita-main .forms{
-    max-width: 47%;
-    max-height: 100%;
-    width: 50%;
     font-size: 1.2em;
-    margin: 2%;
 }
 
 /*Cita Formulario 1 */
 .cita-main .formulario-1, .formulario-2{
-    display: block;
     padding: 15px;
     border: #666 solid 5px;
 }
 
 .cita-main .cat1{
-    display: flex;
-    max-width: 100%;
-    min-width: 40%;
     gap: 15px;
     margin-bottom: 15px;
-    
 }
 
 .cat1__categoria h3{
@@ -339,6 +329,7 @@ option{
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: space-around;
 }
 .cat3-horarios h3{
     width: 100%;
@@ -371,7 +362,7 @@ option{
   }
 
  .r-button input[type="radio"]:checked + label{
-    background: #20b8be;
+    background: #20b8be !important;
     border-radius: 4px;
   }
   
@@ -384,10 +375,9 @@ option{
   /*Cita Formulario 2 */
 
 .f2-parte1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-inline: 25px;
+    justify-content: space-around;
+    /* row-gap:10px; */
+    /* padding-inline: 5px; */
     margin-bottom: 15px;
 }
 
@@ -402,9 +392,14 @@ option{
 .f2-parte2{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 0px 0px 5px 15px;
     justify-content:space-between;
     margin-right: 10%;
+}
+
+.formulario-2{
+
 }
 
 .formulario-2 label{
@@ -424,12 +419,11 @@ option{
     margin: 15px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
 .f2-parte3 button{
-    margin-inline: 100%;
     margin-top: 15px;
     padding:5px;
     font-weight: bold;
@@ -605,7 +599,7 @@ option{
 
 .oferta__img{
     grid-area: oferta__img;
-    width: 92%;
+    width: 100%;
     height: 100%;
 
 }
@@ -618,10 +612,11 @@ option{
     font-weight: bold;
     align-content: center !important;
     justify-content: center !important;
-    width: 90%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -728,6 +723,43 @@ option{
         height: auto;
     }
     
+    .cita-main section{
+        padding:15px 5px 15px 5px;
+        margin: 2%;
+        gap:15px;
+    }
+
+    .f2-parte2{
+        margin:auto;
+    }
+
+    .formulario-2 .f2-parte2 input{
+        width: 90%;
+    }
+
+    .resumen .r-block{
+        margin: 25px 12% 0 12%;
+    }
+
+    #grid__main{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "amigas"
+        "mes"
+        "temporada"
+        "contacto"
+        "oferta__img";
+        padding: 25px;
+        gap:25px;
+    }
+
+    #grid__main h2{
+        font-size: 1.3em;
+    }
 
  }
 
