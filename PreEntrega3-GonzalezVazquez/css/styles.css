@@ -149,11 +149,10 @@ header{
     margin: 2%;
     margin-bottom: 3%;
     border: 5px antiquewhite solid;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
     gap: 15px;
+    overflow: hidden;
 }
 
 .ubicacion h2{
