@@ -78,7 +78,7 @@ header{
     transition: transform 0.4s, background 0.5s, box-shadow 2s, color 0.4s;
 }
 
-.portada-button:hover,
+.portada button:hover,
 .f2-parte1 button:hover,
 .f2-parte3 button:hover,
 .resumen button:hover,
@@ -235,10 +235,6 @@ footer{
     margin-right: 20px;
 }
 
-/* .uñas__contenido{
-    gap: 100px;
-    overflow: hidden;
-} */
 
 .uñas__contenido__servicios{
     font-size: 1.2em ; 
@@ -375,8 +371,6 @@ option{
 
 .f2-parte1{
     justify-content: space-around;
-    /* row-gap:10px; */
-    /* padding-inline: 5px; */
     margin-bottom: 15px;
 }
 
