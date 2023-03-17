@@ -3,11 +3,7 @@ $color-secundario: #8c2641;
 $color-terciario: antiquewhite;
 $color-4 : #732634;
 
-@import "servicios";
-@import "cita";
-@import "galeria";
-@import "ofertas";
-@import "responsive";
+// Imports colodacos al final por problemas en el orden de lectura
 
 
 *{
@@ -231,3 +227,9 @@ footer{
         }
     }
 }
+
+@import "servicios";
+@import "cita";
+@import "galeria";
+@import "ofertas";
+@import "responsive";
